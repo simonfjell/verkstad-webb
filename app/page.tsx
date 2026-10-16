@@ -30,7 +30,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-widest text-white/70">
             {site.name} · {site.address.city}
           </p>
-          <h1 className="mt-4 max-w-2xl text-5xl font-bold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-4 max-w-2xl text-5xl font-bold leading-[1.08] text-white sm:text-6xl lg:text-[4.25rem]">
             Service och reparation av släp och trailers
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/85 sm:text-xl">

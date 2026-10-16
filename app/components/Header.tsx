@@ -26,15 +26,16 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="ml-auto hidden items-center gap-1 lg:flex" aria-label="Huvudmeny">
+        <nav className="ml-auto hidden items-center gap-6 lg:flex" aria-label="Huvudmeny">
           {nav.map((item) => {
-            const active = pathname === item.href;
+            const active = pathname.startsWith(item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-md px-3 py-2 text-[15px] font-semibold transition-colors ${
-                  active ? "text-brand" : "text-ink hover:text-brand"
+                aria-current={active ? "page" : undefined}
+                className={`border-b-2 py-1 text-[16px] font-medium transition-colors ${
+                  active ? "border-brand text-brand" : "border-transparent text-muted hover:text-brand"
                 }`}
               >
                 {item.label}
