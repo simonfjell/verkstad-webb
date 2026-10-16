@@ -35,7 +35,6 @@ export const placeholders = new Set([
 
 export const nav = [
   { href: "/tjanster", label: "Tjänster" },
-  { href: "/servicepartner", label: "Servicepartner" },
   { href: "/om-oss", label: "Om oss" },
   { href: "/kontakt", label: "Kontakt" },
 ];
@@ -92,10 +91,4 @@ export const services: Service[] = [
     points: ["Genomgång före besiktning", "Åtgärd av anmärkningar", "Efterkontroll"],
     icon: "inspect",
   },
-];
-
-export const partners = [
-  { name: "PNO Sverige AB", logo: "/partners-clean/pno.png", w: 400, h: 352 },
-  { name: "Krone Trailers", logo: "/partners-clean/krone.png", w: 400, h: 263 },
-  { name: "Kraker", logo: "/partners-clean/kraker.png", w: 400, h: 358 },
 ];

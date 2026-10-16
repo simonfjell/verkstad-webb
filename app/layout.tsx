@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.shortName}`,
   },
   description:
-    "Verkstad för släp och trailers i Jönköping. Service, bromsar, el, axlar och skadereparationer. Servicepartner till PNO, Krone och Kraker.",
+    "Verkstad för släp och trailers i Jönköping. Service, bromsar, el, axlar och skadereparationer.",
   openGraph: {
     type: "website",
     locale: "sv_SE",

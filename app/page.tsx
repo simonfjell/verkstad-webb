@@ -3,14 +3,13 @@ import Link from "next/link";
 import { TbCheck } from "react-icons/tb";
 import { services, site } from "@/lib/site";
 import ContactBand from "./components/ContactBand";
-import Partners from "./components/Partners";
 import ServiceIcon from "./components/ServiceIcon";
 
 const facts = [
-  { big: "Släp & trailers", small: "Det är allt vi gör" },
-  { big: "PNO · Krone · Kraker", small: "Servicepartner" },
+  { big: "Släp & trailers", small: "Vår specialitet" },
   { big: "Rosenlunds", small: "Familjeägt sedan 1964" },
   { big: "Jönköping", small: "Mitt i transport-Sverige" },
+  { big: "Snabbt besked", small: "Ring eller skicka en förfrågan" },
 ];
 
 export default function Home() {
@@ -55,17 +54,12 @@ export default function Home() {
       </section>
 
       {/* Faktaremsa */}
-      <section className="border-b border-line bg-white">
-        <ul className="mx-auto grid max-w-6xl grid-cols-2 px-4 sm:px-6 lg:grid-cols-4">
-          {facts.map((f, i) => (
-            <li
-              key={f.big}
-              className={`py-7 pr-4 ${i % 2 === 1 ? "pl-4 border-l border-line lg:pl-6" : ""} ${
-                i === 2 ? "lg:border-l lg:pl-6" : ""
-              } ${i > 1 ? "border-t border-line lg:border-t-0" : ""}`}
-            >
-              <p className="font-display text-xl font-bold text-brand sm:text-2xl">{f.big}</p>
-              <p className="mt-1 text-sm text-muted">{f.small}</p>
+      <section className="bg-brand">
+        <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-x-6 gap-y-8 px-4 py-10 sm:px-6 lg:grid-cols-4">
+          {facts.map((f) => (
+            <li key={f.big}>
+              <p className="font-display text-2xl font-bold text-white sm:text-3xl">{f.big}</p>
+              <p className="mt-1 text-white/75">{f.small}</p>
             </li>
           ))}
         </ul>
@@ -96,7 +90,6 @@ export default function Home() {
                 "Felsökning av erfarna tekniker som kan trailers",
                 "Tydligt besked om vad som behöver göras och vad det kostar",
                 "Service enligt tillverkarens krav, så att garantin gäller",
-                "Originaldelar via våra servicepartners",
               ].map((t) => (
                 <li key={t} className="flex gap-3 text-lg text-ink">
                   <TbCheck className="mt-1 shrink-0 text-xl text-brand" aria-hidden />
@@ -142,7 +135,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Partners />
       <ContactBand />
     </>
   );
