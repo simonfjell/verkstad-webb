@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden bg-brand-deep">
+      <section className="relative isolate overflow-hidden bg-brand">
         <Image
           src="/images/hero.webp"
           alt=""
@@ -25,7 +25,7 @@ export default function Home() {
           sizes="100vw"
           className="-z-10 object-cover object-[70%_center]"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-brand-deep via-brand-deep/85 to-brand-deep/30" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-brand/90 via-brand/70 to-brand/45" />
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:py-40">
           <p className="text-sm font-semibold uppercase tracking-widest text-white/70">
             {site.name} · {site.address.city}
