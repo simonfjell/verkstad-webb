@@ -44,8 +44,9 @@ export type Service = {
   title: string;
   short: string;
   points: string[];
-  icon: "floor" | "brake" | "service" | "lift" | "weld" | "tire";
+  icon: "floor" | "brake" | "service" | "lift" | "weld" | "tire" | "wash";
   featured?: boolean;
+  wide?: boolean;
 };
 
 export const services: Service[] = [
@@ -91,5 +92,13 @@ export const services: Service[] = [
     short: "Däckbyte och hjularbeten på släp, trailers, link och dolly.",
     points: ["Däckbyte", "Hjularbeten", "Kontroll av slitage"],
     icon: "tire",
+  },
+  {
+    slug: "tvatthall",
+    title: "Tvätthall för tung trafik",
+    short: "Egen tvätthall för lastbilar, släp och trailers.",
+    points: ["Lastbilar", "Släp och trailers"],
+    icon: "wash",
+    wide: true,
   },
 ];

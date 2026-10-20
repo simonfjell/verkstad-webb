@@ -73,7 +73,7 @@ export default function Home() {
             <h2 className="mt-2 text-4xl font-bold text-ink sm:text-5xl">Vi gör i stort sett allt på en trailer</h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
               Rosenlunds Verkstad servar och reparerar släp, trailers, link och dolly åt åkerier och uthyrningsbolag.
-              Allt från bromsar och lift till däckbyte, svets och försäkringsjobb.
+              Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
               Vår specialitet är walking floor-trailers. Vi är 13 medarbetare med 12 portar, och många av oss har jobbat
@@ -123,7 +123,7 @@ export default function Home() {
             </Link>
           </div>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => (
+            {services.filter((s) => !s.wide).map((s) => (
               <li key={s.slug}>
                 <Link
                   href={`/tjanster#${s.slug}`}
@@ -148,6 +148,21 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <Link
+            href="/tjanster#tvatthall"
+            className="group mt-5 flex flex-col gap-5 rounded-xl bg-brand p-7 text-white shadow-card transition-shadow hover:shadow-card-hover sm:flex-row sm:items-center sm:p-8"
+          >
+            <span className="flex size-14 shrink-0 items-center justify-center rounded-lg bg-white/15 text-3xl">
+              <ServiceIcon name="wash" />
+            </span>
+            <span className="flex-1">
+              <span className="block font-display text-2xl font-bold">Tvätthall för tung trafik</span>
+              <span className="mt-1 block text-white/80">Vi har egen tvätthall för lastbilar, släp och trailers.</span>
+            </span>
+            <span className="font-semibold">
+              Läs mer <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+            </span>
+          </Link>
         </div>
       </section>
 

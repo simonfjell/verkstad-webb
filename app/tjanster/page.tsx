@@ -8,7 +8,7 @@ import ServiceIcon from "../components/ServiceIcon";
 export const metadata: Metadata = {
   title: "Tjänster",
   description:
-    "Walking floor, bromsar och EBS, service och besiktning, lift och liftservice, skador, skåp och svets samt däckbyte för släp, trailers, link och dolly i Jönköping.",
+    "Verkstad för släp, trailers, link och dolly i Jönköping: walking floor, bromsar och EBS, service och besiktning, lift, skador, skåp och svets, däckbyte samt tvätthall för tung trafik.",
 };
 
 export default function Tjanster() {
@@ -37,7 +37,7 @@ export default function Tjanster() {
               <li
                 key={s.slug}
                 id={s.slug}
-                className={`scroll-mt-28 rounded-xl border p-8 shadow-card ${
+                className={`scroll-mt-28 rounded-xl border p-8 shadow-card ${s.wide ? "md:col-span-2" : ""} ${
                   s.featured ? "border-brand bg-brand text-white" : "border-line bg-white"
                 }`}
               >

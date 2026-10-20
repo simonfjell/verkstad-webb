@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.shortName}`,
   },
   description:
-    "Verkstad för släp, trailers, link och dolly i Jönköping. Specialister på walking floor. Bromsar, EBS, service, lift, svets, försäkringsjobb och däckbyte.",
+    "Verkstad för släp, trailers, link och dolly i Jönköping. Specialister på walking floor. Bromsar, EBS, service, lift, svets, försäkringsjobb, däckbyte och tvätthall för tung trafik.",
   openGraph: {
     type: "website",
     locale: "sv_SE",
