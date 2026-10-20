@@ -15,7 +15,7 @@ export const site = {
     city: "Jönköping",
   },
   hours: [
-    { days: "Måndag–fredag", time: "07:00–16:00" }, // TODO: bekräfta
+    { days: "Måndag–fredag", time: "07:00–16:00" },
     { days: "Lördag–söndag", time: "Stängt" },
   ],
 
