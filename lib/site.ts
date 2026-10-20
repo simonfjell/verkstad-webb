@@ -44,7 +44,6 @@ export type Service = {
   title: string;
   short: string;
   points: string[];
-  icon: "floor" | "brake" | "service" | "lift" | "weld" | "tire" | "wash";
   wide?: boolean;
 };
 
@@ -54,49 +53,42 @@ export const services: Service[] = [
     title: "Walking floor",
     short: "Felsökning, service och reparation av walking floor-trailers.",
     points: ["Hydraulik och drivenhet", "Golvlameller och tätningar", "Felsökning och service"],
-    icon: "floor",
   },
   {
     slug: "bromsar",
     title: "Bromsar & EBS",
     short: "Felsökning och reparation av bromssystem, EBS och luftsystem.",
     points: ["Felsökning av EBS", "Skivor, belägg och trummor", "Luftsystem och ventiler"],
-    icon: "brake",
   },
   {
     slug: "service",
     title: "Service & besiktning",
     short: "Löpande service och genomgång inför besiktning. Vi åtgärdar även anmärkningar.",
     points: ["Löpande service", "Genomgång före besiktning", "Åtgärd av anmärkningar"],
-    icon: "service",
   },
   {
     slug: "lift",
     title: "Lift & liftservice",
     short: "Service och reparation av bakgavellyftar och slädlyftar.",
     points: ["Bakgavellyftar", "Slädlyftar", "Felsökning, service och reparation"],
-    icon: "lift",
   },
   {
     slug: "skador",
-    title: "Skador, skåp & svets",
-    short: "Försäkringsjobb, lättare skåpreparationer och svetsarbeten.",
-    points: ["Försäkringsjobb", "Lättare skåpreparationer", "Svets"],
-    icon: "weld",
+    title: "Skador & påbyggnad",
+    short: "Försäkringsjobb och reparationer av påbyggnader, från lättare skåpreparationer till kapell och svets.",
+    points: ["Försäkringsjobb", "Lättare skåpreparationer med lim och spackel", "Kapell och presenning", "Svets"],
   },
   {
     slug: "dack",
     title: "Däck & hjul",
     short: "Däckbyte och hjularbeten på släp, trailers, link och dolly.",
     points: ["Däckbyte", "Hjularbeten", "Kontroll av slitage"],
-    icon: "tire",
   },
   {
     slug: "tvatthall",
     title: "Tvätthall för tung trafik",
     short: "Egen tvätthall för lastbilar, släp och trailers.",
     points: ["Lastbilar", "Släp och trailers"],
-    icon: "wash",
     wide: true,
   },
 ];

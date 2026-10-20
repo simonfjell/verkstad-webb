@@ -3,12 +3,11 @@ import { TbCheck } from "react-icons/tb";
 import { services, vehicles } from "@/lib/site";
 import ContactBand from "../components/ContactBand";
 import PageTop from "../components/PageTop";
-import ServiceIcon from "../components/ServiceIcon";
 
 export const metadata: Metadata = {
   title: "Tjänster",
   description:
-    "Verkstad för släp, trailers, link och dolly i Jönköping: walking floor, bromsar och EBS, service och besiktning, lift, skador, skåp och svets, däckbyte samt tvätthall för tung trafik.",
+    "Verkstad för släp, trailers, link och dolly i Jönköping: walking floor, bromsar och EBS, service och besiktning, lift, skador och påbyggnad, däckbyte samt tvätthall för tung trafik.",
 };
 
 export default function Tjanster() {
@@ -37,17 +36,10 @@ export default function Tjanster() {
               <li
                 key={s.slug}
                 id={s.slug}
-                className={`scroll-mt-28 rounded-xl border p-8 shadow-card ${s.wide ? "md:col-span-2" : ""} border-line bg-white`}
+                className={`scroll-mt-28 rounded-xl border p-8 shadow-card ${s.wide ? "md:col-span-2" : ""} border-line border-t-[3px] border-t-brand bg-white`}
               >
-                <div className="flex items-start justify-between gap-4">
-                  <span
-                    className={`flex size-12 items-center justify-center rounded-lg text-2xl bg-brand-light text-brand`}
-                  >
-                    <ServiceIcon name={s.icon} />
-                  </span>
-                </div>
-                <h2 className={`mt-5 text-3xl font-bold text-ink`}>{s.title}</h2>
-                <p className={`mt-3 text-lg leading-relaxed text-muted`}>{s.short}</p>
+                <h2 className="text-3xl font-bold text-ink">{s.title}</h2>
+                <p className="mt-3 text-lg leading-relaxed text-muted">{s.short}</p>
                 <ul className="mt-5 space-y-2">
                   {s.points.map((p) => (
                     <li key={p} className="flex gap-2.5">

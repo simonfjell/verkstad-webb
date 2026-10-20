@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { TbClock, TbMail, TbMapPin, TbPhone } from "react-icons/tb";
 import { site } from "@/lib/site";
 import PageTop from "../components/PageTop";
 import Text from "../components/Text";
@@ -25,20 +24,17 @@ export default function Kontakt() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2">
           <div className="grid gap-5 sm:grid-cols-2">
             <a href={site.phoneHref} className="rounded-xl border border-line p-6 shadow-card hover:shadow-card-hover">
-              <TbPhone className="text-3xl text-brand" aria-hidden />
-              <h2 className="mt-3 text-xl font-bold text-ink">Telefon</h2>
+              <h2 className="text-xl font-bold text-ink">Telefon</h2>
               <p className="mt-1 text-lg text-ink">
                 <Text>{site.phone}</Text>
               </p>
             </a>
             <a href={`mailto:${site.email}`} className="rounded-xl border border-line p-6 shadow-card hover:shadow-card-hover">
-              <TbMail className="text-3xl text-brand" aria-hidden />
-              <h2 className="mt-3 text-xl font-bold text-ink">Mejl</h2>
+              <h2 className="text-xl font-bold text-ink">Mejl</h2>
               <p className="mt-1 break-all text-lg text-ink">{site.email}</p>
             </a>
             <div className="rounded-xl border border-line p-6 shadow-card">
-              <TbMapPin className="text-3xl text-brand" aria-hidden />
-              <h2 className="mt-3 text-xl font-bold text-ink">Besöksadress</h2>
+              <h2 className="text-xl font-bold text-ink">Besöksadress</h2>
               <p className="mt-1 text-lg text-ink">
                 <Text>{site.address.street}</Text>
                 <br />
@@ -46,8 +42,7 @@ export default function Kontakt() {
               </p>
             </div>
             <div className="rounded-xl border border-line p-6 shadow-card">
-              <TbClock className="text-3xl text-brand" aria-hidden />
-              <h2 className="mt-3 text-xl font-bold text-ink">Öppettider</h2>
+              <h2 className="text-xl font-bold text-ink">Öppettider</h2>
               <ul className="mt-1 text-ink">
                 {site.hours.map((h) => (
                   <li key={h.days} className="flex justify-between gap-3">

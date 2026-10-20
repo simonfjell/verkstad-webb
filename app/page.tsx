@@ -3,7 +3,6 @@ import Link from "next/link";
 import { TbCheck } from "react-icons/tb";
 import { customers, services, site, vehicles } from "@/lib/site";
 import ContactBand from "./components/ContactBand";
-import ServiceIcon from "./components/ServiceIcon";
 
 const facts = [
   { big: "12", small: "Portar i verkstaden" },
@@ -127,14 +126,9 @@ export default function Home() {
               <li key={s.slug}>
                 <Link
                   href={`/tjanster#${s.slug}`}
-                  className="group flex h-full flex-col rounded-xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-card-hover"
+                  className="group flex h-full flex-col rounded-xl border border-line border-t-[3px] border-t-brand bg-white p-7 shadow-card transition-shadow hover:shadow-card-hover"
                 >
-                  <span className="flex items-center justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-lg bg-brand-light text-2xl text-brand">
-                      <ServiceIcon name={s.icon} />
-                    </span>
-                  </span>
-                  <h3 className="mt-5 text-2xl font-bold text-ink">{s.title}</h3>
+                  <h3 className="text-2xl font-bold text-ink">{s.title}</h3>
                   <p className="mt-2 leading-relaxed text-muted">{s.short}</p>
                   <span className="mt-auto pt-5 font-semibold text-brand">
                     Läs mer <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
@@ -147,9 +141,6 @@ export default function Home() {
             href="/tjanster#tvatthall"
             className="group mt-5 flex flex-col gap-5 rounded-xl bg-brand p-7 text-white shadow-card transition-shadow hover:shadow-card-hover sm:flex-row sm:items-center sm:p-8"
           >
-            <span className="flex size-14 shrink-0 items-center justify-center rounded-lg bg-white/15 text-3xl">
-              <ServiceIcon name="wash" />
-            </span>
             <span className="flex-1">
               <span className="block font-display text-2xl font-bold">Tvätthall för tung trafik</span>
               <span className="mt-1 block text-white/80">Vi har egen tvätthall för lastbilar, släp och trailers.</span>
