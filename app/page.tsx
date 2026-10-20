@@ -118,7 +118,7 @@ export default function Home() {
               <li key={s.slug}>
                 <Link
                   href={`/tjanster#${s.slug}`}
-                  className="group flex h-full flex-col rounded-xl border border-line bg-white p-7 transition-shadow hover:shadow-lg hover:shadow-brand/10"
+                  className="group flex h-full flex-col rounded-xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-card-hover"
                 >
                   <span className="flex size-12 items-center justify-center rounded-lg bg-brand-light text-2xl text-brand">
                     <ServiceIcon name={s.icon} />
