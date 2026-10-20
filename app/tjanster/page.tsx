@@ -17,7 +17,7 @@ export default function Tjanster() {
         crumb="Tjänster"
         eyebrow="Vad vi gör"
         title="Verkstadstjänster för släp och trailers"
-        text="Vi gör i stort sett allt man kan göra på ett släp, en trailer, link eller dolly. Här är det vanligaste."
+        text="Service och reparation av släp, trailers, link och dolly. Här är våra vanligaste tjänster."
       />
 
       <section className="bg-white">

@@ -22,7 +22,7 @@ export default function OmOss() {
       <section className="bg-white">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-5 text-lg leading-relaxed text-muted">
-            <h2 className="text-3xl font-bold text-ink sm:text-4xl">Vi gör i stort sett allt på en trailer</h2>
+            <h2 className="text-3xl font-bold text-ink sm:text-4xl">Komplett verkstad för släp och trailers</h2>
             <p>
               Rosenlunds Verkstad tar hand om släp, trailers, link och dolly. Vi jobbar med service, bromsar och EBS, lift
               och liftservice, däckbyte, svets, kapell, lättare skåpreparationer och försäkringsjobb. Vi har också egen tvätthall för tung trafik.

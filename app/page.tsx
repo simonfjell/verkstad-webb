@@ -70,7 +70,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-brand">Om oss</p>
-            <h2 className="mt-2 text-4xl font-bold text-ink sm:text-5xl">Vi gör i stort sett allt på en trailer</h2>
+            <h2 className="mt-2 text-4xl font-bold text-ink sm:text-5xl">Komplett verkstad för släp och trailers</h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
               Rosenlunds Verkstad servar och reparerar släp, trailers, link och dolly åt åkerier och uthyrningsbolag.
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
