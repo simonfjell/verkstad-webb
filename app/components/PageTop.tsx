@@ -15,7 +15,7 @@ export default function PageTop({
 }) {
   return (
     <section className="relative isolate overflow-hidden bg-brand-deep">
-      <Image src="/images/hero.webp" alt="" fill priority sizes="100vw" className="-z-10 object-cover object-[70%_center]" />
+      <Image src="/images/verkstad.webp" alt="" fill priority sizes="100vw" className="-z-10 object-cover object-[62%_center] lg:object-[100%_center]" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(105deg,rgba(7,45,90,0.92)_0%,rgba(7,45,90,0.78)_45%,rgba(10,62,124,0.45)_100%)]" />
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <nav aria-label="Brödsmulor" className="text-sm text-white/75">
