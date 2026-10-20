@@ -44,7 +44,7 @@ export default function OmOss() {
               här i 13–20 år, sedan innan Rosenlunds tog över.
             </p>
             <p>
-              I dag är vi omkring 13 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och
+              I dag är vi drygt 15 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och
               hålla nere stilleståndet.
             </p>
             {/* TODO: bilder från verkstaden */}
@@ -54,7 +54,7 @@ export default function OmOss() {
             <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/20 text-white">
               {[
                 ["12", "Portar"],
-                ["13", "Medarbetare"],
+                ["Drygt 15", "Medarbetare"],
                 ["13–20 år", "Erfarenhet"],
                 ["2019", "Rosenlunds Verkstad"],
               ].map(([big, small]) => (

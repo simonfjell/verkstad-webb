@@ -7,7 +7,7 @@ import ServiceIcon from "./components/ServiceIcon";
 
 const facts = [
   { big: "12", small: "Portar i verkstaden" },
-  { big: "13", small: "Medarbetare" },
+  { big: "Drygt 15", small: "Medarbetare" },
   { big: "13–20 år", small: "Erfarenhet i verkstaden" },
   { big: "2019", small: "Rosenlunds Verkstad startade" },
 ];
@@ -76,7 +76,7 @@ export default function Home() {
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Vår specialitet är walking floor-trailers. Vi är 13 medarbetare med 12 portar, och många av oss har jobbat
+              Vår specialitet är walking floor-trailers. Vi är drygt 15 medarbetare med 12 portar, och många av oss har jobbat
               i verkstaden i 13–20 år. Sedan 2019 är vi en del av Rosenlunds, tillsammans med {site.parent.name}.
             </p>
             <Link href="/om-oss" className="mt-7 inline-block font-semibold text-brand underline-offset-4 hover:underline">
