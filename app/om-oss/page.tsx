@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { TbCheck } from "react-icons/tb";
-import { customers, site, vehicles } from "@/lib/site";
+import { site, vehicles } from "@/lib/site";
 import ContactBand from "../components/ContactBand";
 import PageTop from "../components/PageTop";
 
@@ -36,7 +36,7 @@ export default function OmOss() {
               <a href={site.parent.url} className="font-semibold text-brand underline-offset-4 hover:underline">
                 Rosenlunds Åkeri
               </a>
-              . Vi servar åkeriets egna fordon, men också andra åkerier och uthyrningsbolag.
+              . Vi tar emot fordon från alla åkerier och uthyrningsbolag.
             </p>
             <h2 className="pt-4 text-3xl font-bold text-ink sm:text-4xl">Ny i namnet, inte i verkstaden</h2>
             <p>
@@ -72,17 +72,6 @@ export default function OmOss() {
                   <li key={v} className="flex gap-2.5 text-ink">
                     <TbCheck className="mt-1 shrink-0 text-brand" aria-hidden />
                     {v}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-xl bg-surface p-8">
-              <h3 className="text-xl font-bold text-ink">Våra kunder</h3>
-              <ul className="mt-4 space-y-2.5">
-                {customers.map((c) => (
-                  <li key={c} className="flex gap-2.5 text-ink">
-                    <TbCheck className="mt-1 shrink-0 text-brand" aria-hidden />
-                    {c}
                   </li>
                 ))}
               </ul>

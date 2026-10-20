@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TbCheck } from "react-icons/tb";
-import { customers, services, site, vehicles } from "@/lib/site";
+import { services, site, vehicles } from "@/lib/site";
 import BrandBand from "./components/BrandBand";
 import ContactBand from "./components/ContactBand";
 
@@ -72,7 +72,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-widest text-brand">Om oss</p>
             <h2 className="mt-2 text-4xl font-bold text-ink sm:text-5xl">Komplett verkstad för släp och trailers</h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
-              Rosenlunds Verkstad servar och reparerar släp, trailers, link och dolly åt åkerier och uthyrningsbolag.
+              Rosenlunds Verkstad servar och reparerar släp, trailers, link och dolly.
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
@@ -83,10 +83,10 @@ export default function Home() {
               Läs mer om oss →
             </Link>
           </div>
-          <div className="grid gap-6 rounded-xl bg-surface p-8 sm:grid-cols-2 sm:p-10">
+          <div className="rounded-xl bg-surface p-8 sm:p-10">
             <div>
-              <h3 className="text-xl font-bold text-ink">Fordon</h3>
-              <ul className="mt-4 space-y-2.5">
+              <h3 className="text-xl font-bold text-ink">Fordon vi jobbar med</h3>
+              <ul className="mt-4 grid gap-x-6 gap-y-2.5 sm:grid-cols-2">
                 {vehicles.map((v) => (
                   <li key={v} className="flex gap-2.5 text-ink">
                     <TbCheck className="mt-1 shrink-0 text-brand" aria-hidden />
@@ -95,17 +95,9 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-xl font-bold text-ink">Kunder</h3>
-              <ul className="mt-4 space-y-2.5">
-                {customers.map((c) => (
-                  <li key={c} className="flex gap-2.5 text-ink">
-                    <TbCheck className="mt-1 shrink-0 text-brand" aria-hidden />
-                    {c}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <p className="mt-6 border-t border-line pt-6 text-lg font-semibold text-ink">
+              Vi tar emot fordon från alla åkerier och uthyrningsbolag.
+            </p>
           </div>
         </div>
       </section>

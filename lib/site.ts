@@ -36,9 +36,6 @@ export const nav = [
 // Fordon vi jobbar med
 export const vehicles = ["Släp", "Trailers", "Link", "Dolly", "Walking floor-trailers", "Skåpbilar"];
 
-// Kunder vi jobbar åt
-export const customers = ["Rosenlunds Åkeri", "Andra åkerier", "Uthyrningsbolag"];
-
 export type Service = {
   slug: string;
   title: string;
