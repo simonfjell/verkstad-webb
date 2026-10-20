@@ -25,11 +25,13 @@ export const site = {
   },
 };
 
-export const placeholders = new Set([site.phone, site.address.street, site.address.zip]);
+// Text som ska gulmarkeras som platshållare i förhandsvisningen (tom = allt är riktiga uppgifter)
+export const placeholders = new Set<string>([]);
 
 export const nav = [
   { href: "/tjanster", label: "Tjänster" },
   { href: "/om-oss", label: "Om oss" },
+  { href: "/kontaktpersoner", label: "Kontaktpersoner" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 
@@ -92,3 +94,21 @@ export const services: Service[] = [
 
 // Märken vi jobbar med (namn som text, inga loggor – se diskussion om varumärken)
 export const brands = ["Kraker", "Knapen", "Stas", "Krone", "Schmitz Cargobull", "Denison", "VAK", "JOST", "SAF"];
+
+// Kontaktpersoner. TODO: fyll i riktiga namn, titlar och nummer (kolla med varje person först).
+// Sätt placeholder: false när uppgifterna är bekräftade. photo: sökväg i /public, t.ex. "/team/anna.webp".
+export type Contact = {
+  name: string;
+  role: string;
+  phone?: string;
+  phoneHref?: string;
+  email?: string;
+  photo?: string;
+  placeholder?: boolean;
+};
+
+export const contacts: Contact[] = [
+  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", placeholder: true },
+  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", placeholder: true },
+  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", placeholder: true },
+];
