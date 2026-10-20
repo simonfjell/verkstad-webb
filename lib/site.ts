@@ -6,12 +6,12 @@ export const site = {
   shortName: "Rosenlunds Verkstad",
   url: "https://verkstad-webb.vercel.app", // TODO: byt till riktig domän
 
-  phone: "036-XX XX XX", // TODO
-  phoneHref: "tel:+4636000000", // TODO
-  email: "info@rosenlundsverkstad.se", // TODO: bekräfta adress
+  phone: "076-000 80 68",
+  phoneHref: "tel:+46760008068",
+  email: "verkstad@rosenlundsakeri.se",
   address: {
-    street: "Adressvägen 12", // TODO
-    zip: "554 54", // TODO
+    street: "Lampvägen 6",
+    zip: "556 52",
     city: "Jönköping",
   },
   hours: [
