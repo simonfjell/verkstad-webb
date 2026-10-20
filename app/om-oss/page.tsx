@@ -38,10 +38,33 @@ export default function OmOss() {
               </a>
               . Vi servar åkeriets egna fordon, men också andra åkerier och uthyrningsbolag.
             </p>
-            {/* TODO: lägg till antal anställda, sedan när verkstaden funnits och gärna bilder från verkstaden */}
+            <h2 className="pt-4 text-3xl font-bold text-ink sm:text-4xl">Ny i namnet, inte i verkstaden</h2>
+            <p>
+              Rosenlunds Verkstad öppnade 2019, men verkstaden och kunskapen fanns långt innan dess. Många av oss har jobbat
+              här i 13–20 år, sedan innan Rosenlunds tog över.
+            </p>
+            <p>
+              I dag är vi omkring 13 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och
+              hålla nere stilleståndet.
+            </p>
+            {/* TODO: bilder från verkstaden */}
           </div>
 
           <aside className="space-y-6">
+            <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/20 text-white">
+              {[
+                ["12", "Portar"],
+                ["13", "Medarbetare"],
+                ["13–20 år", "Erfarenhet"],
+                ["2019", "Rosenlunds Verkstad"],
+              ].map(([big, small]) => (
+                <div key={small} className="bg-brand p-6">
+                  <dt className="sr-only">{small}</dt>
+                  <dd className="font-display text-3xl font-bold">{big}</dd>
+                  <dd className="mt-1 text-sm text-white/75">{small}</dd>
+                </div>
+              ))}
+            </dl>
             <div className="rounded-xl bg-surface p-8">
               <h3 className="text-xl font-bold text-ink">Fordon vi jobbar med</h3>
               <ul className="mt-4 space-y-2.5">
