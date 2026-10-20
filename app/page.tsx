@@ -25,7 +25,7 @@ export default function Home() {
           sizes="100vw"
           className="-z-10 object-cover object-[70%_center]"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-brand/90 via-brand/70 to-brand/45" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(105deg,rgba(7,45,90,0.92)_0%,rgba(7,45,90,0.78)_45%,rgba(10,62,124,0.45)_100%)]" />
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:py-40">
           <p className="text-sm font-semibold uppercase tracking-widest text-white/70">
             {site.name} · {site.address.city}
