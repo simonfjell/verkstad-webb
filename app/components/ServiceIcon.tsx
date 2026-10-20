@@ -1,13 +1,13 @@
-import { TbBolt, TbCircleDot, TbClipboardCheck, TbDisc, TbFlame, TbTool } from "react-icons/tb";
+import { TbArrowBarUp, TbArrowsHorizontal, TbCircleDot, TbClipboardCheck, TbDisc, TbFlame } from "react-icons/tb";
 import type { Service } from "@/lib/site";
 
 const icons = {
-  service: TbTool,
+  floor: TbArrowsHorizontal,
   brake: TbDisc,
-  electric: TbBolt,
-  axle: TbCircleDot,
+  service: TbClipboardCheck,
+  lift: TbArrowBarUp,
   weld: TbFlame,
-  inspect: TbClipboardCheck,
+  tire: TbCircleDot,
 };
 
 export default function ServiceIcon({ name, className }: { name: Service["icon"]; className?: string }) {

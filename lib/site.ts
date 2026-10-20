@@ -4,7 +4,6 @@
 export const site = {
   name: "Rosenlunds Verkstads AB",
   shortName: "Rosenlunds Verkstad",
-  tagline: "Service och reparation av släp och trailers i Jönköping",
   url: "https://verkstad-webb.vercel.app", // TODO: byt till riktig domän
 
   phone: "036-XX XX XX", // TODO
@@ -19,7 +18,6 @@ export const site = {
     { days: "Måndag–fredag", time: "07:00–16:00" }, // TODO: bekräfta
     { days: "Lördag–söndag", time: "Stängt" },
   ],
-  mapQuery: "Rosenlunds Åkeri, Lampvägen 2, Jönköping", // TODO: byt till verkstadens adress
 
   parent: {
     name: "Rosenlunds Åkeri AB",
@@ -27,11 +25,7 @@ export const site = {
   },
 };
 
-export const placeholders = new Set([
-  site.phone,
-  site.address.street,
-  site.address.zip,
-]);
+export const placeholders = new Set([site.phone, site.address.street, site.address.zip]);
 
 export const nav = [
   { href: "/tjanster", label: "Tjänster" },
@@ -39,56 +33,63 @@ export const nav = [
   { href: "/kontakt", label: "Kontakt" },
 ];
 
+// Fordon vi jobbar med
+export const vehicles = ["Släp", "Trailers", "Link", "Dolly", "Walking floor-trailers", "Skåpbilar"];
+
+// Kunder vi jobbar åt
+export const customers = ["Rosenlunds Åkeri", "Andra åkerier", "Uthyrningsbolag"];
+
 export type Service = {
   slug: string;
   title: string;
   short: string;
   points: string[];
-  icon: "service" | "brake" | "electric" | "axle" | "weld" | "inspect";
+  icon: "floor" | "brake" | "service" | "lift" | "weld" | "tire";
+  featured?: boolean;
 };
 
-// TODO: gå igenom och justera så det stämmer med vad verkstaden faktiskt gör.
 export const services: Service[] = [
   {
-    slug: "service",
-    title: "Service & underhåll",
-    short: "Planerad service enligt tillverkarens intervall, så att släpet håller länge och går igenom besiktningen.",
-    points: ["Serviceprotokoll enligt tillverkare", "Smörjning och justering", "Kontroll av slitdelar"],
-    icon: "service",
+    slug: "walking-floor",
+    title: "Walking floor",
+    short: "Vår specialitet. Felsökning, service och reparation av walking floor-trailers.",
+    points: ["Hydraulik och drivenhet", "Golvlameller och tätningar", "Felsökning och service"],
+    icon: "floor",
+    featured: true,
   },
   {
     slug: "bromsar",
     title: "Bromsar & EBS",
-    short: "Felsökning och reparation av bromssystem, från belägg och skivor till EBS och luftsystem.",
-    points: ["Diagnos av EBS/ABS", "Byte av skivor, belägg och trummor", "Täthetskontroll av luftsystem"],
+    short: "Felsökning och reparation av bromssystem, EBS och luftsystem.",
+    points: ["Felsökning av EBS", "Skivor, belägg och trummor", "Luftsystem och ventiler"],
     icon: "brake",
   },
   {
-    slug: "el",
-    title: "El & belysning",
-    short: "Felsökning av elsystem, kablage och belysning så att allt fungerar och syns på vägen.",
-    points: ["Felsökning av kablage", "Lampor och markeringsljus", "Kontakter och anslutningar"],
-    icon: "electric",
+    slug: "service",
+    title: "Service & besiktning",
+    short: "Löpande service och genomgång inför besiktning. Vi åtgärdar även anmärkningar.",
+    points: ["Löpande service", "Genomgång före besiktning", "Åtgärd av anmärkningar"],
+    icon: "service",
   },
   {
-    slug: "hjul-axlar",
-    title: "Hjul, axlar & fjädring",
-    short: "Hjullager, axlar och luftfjädring, åtgärdat innan det blir ett stopp på vägen.",
-    points: ["Hjullager och navreparationer", "Luftfjädring och nivåreglering", "Axel- och hjulinställning"],
-    icon: "axle",
+    slug: "lift",
+    title: "Lift & liftservice",
+    short: "Service och reparation av bakgavellyftar och slädlyftar.",
+    points: ["Bakgavellyftar", "Slädlyftar", "Felsökning, service och reparation"],
+    icon: "lift",
   },
   {
     slug: "skador",
-    title: "Skador & svets",
-    short: "Reparation av skador på chassi, kaross, dörrar och påbyggnad.",
-    points: ["Svets- och plåtarbeten", "Dörrar, gångjärn och lås", "Golv och sidoväggar"],
+    title: "Skador, skåp & svets",
+    short: "Försäkringsjobb, lättare skåpreparationer och svetsarbeten.",
+    points: ["Försäkringsjobb", "Lättare skåpreparationer", "Svets"],
     icon: "weld",
   },
   {
-    slug: "besiktning",
-    title: "Besiktningsförberedelse",
-    short: "Vi går igenom släpet före besiktning och åtgärdar eventuella brister efteråt.",
-    points: ["Genomgång före besiktning", "Åtgärd av anmärkningar", "Efterkontroll"],
-    icon: "inspect",
+    slug: "dack",
+    title: "Däck & hjul",
+    short: "Däckbyte och hjularbeten på släp, trailers, link och dolly.",
+    points: ["Däckbyte", "Hjularbeten", "Kontroll av slitage"],
+    icon: "tire",
   },
 ];

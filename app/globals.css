@@ -11,6 +11,7 @@
   --color-ink: #1b2430;          /* --text */
   --color-muted: #5b6775;        /* --text-dampad */
   --color-line: #e2e6eb;         /* --linje */
+  --color-line-strong: #cbd3dc;  /* --linje-stark */
   --color-surface: #f2f6fb;      /* --yta-dampad */
 
   --font-sans: system-ui, -apple-system, "Segoe UI", "Noto Sans", "Open Sans", Arial, sans-serif; /* --brod */
