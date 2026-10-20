@@ -64,3 +64,30 @@ a.rounded-md,
 button {
   font-family: var(--font-display);
 }
+
+/* Rullande märkesband */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 35s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .marquee-track > ul[aria-hidden] {
+    display: none;
+  }
+  .marquee {
+    mask-image: none !important;
+    padding-inline: 1rem;
+  }
+}

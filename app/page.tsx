@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TbCheck } from "react-icons/tb";
 import { customers, services, site, vehicles } from "@/lib/site";
+import BrandBand from "./components/BrandBand";
 import ContactBand from "./components/ContactBand";
 
 const facts = [
@@ -152,6 +153,7 @@ export default function Home() {
         </div>
       </section>
 
+      <BrandBand />
       <ContactBand />
     </>
   );

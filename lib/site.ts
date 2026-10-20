@@ -92,3 +92,6 @@ export const services: Service[] = [
     wide: true,
   },
 ];
+
+// Märken vi jobbar med (namn som text, inga loggor – se diskussion om varumärken)
+export const brands = ["Kraker", "Knapen", "Stas", "Krone", "Schmitz Cargobull", "Denison", "VAK"];
