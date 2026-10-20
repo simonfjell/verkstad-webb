@@ -15,7 +15,7 @@ export default function OmOss() {
       <PageTop
         crumb="Om oss"
         eyebrow="Om oss"
-        title="Verkstaden inom Rosenlunds"
+        title="Verkstaden inom Rosenlunds Åkeri"
         text="Vi servar och reparerar släp och trailers åt åkerier och uthyrningsbolag i Jönköping."
       />
 
@@ -32,16 +32,16 @@ export default function OmOss() {
               det är något vi jobbar med varje vecka.
             </p>
             <p>
-              Vi är en del av Rosenlunds i Jönköping, tillsammans med{" "}
+              Vi är en del av{" "}
               <a href={site.parent.url} className="font-semibold text-brand underline-offset-4 hover:underline">
-                {site.parent.name}
+                Rosenlunds Åkeri
               </a>
               . Vi servar åkeriets egna fordon, men också andra åkerier och uthyrningsbolag.
             </p>
             <h2 className="pt-4 text-3xl font-bold text-ink sm:text-4xl">Ny i namnet, inte i verkstaden</h2>
             <p>
               Rosenlunds Verkstad öppnade 2019, men verkstaden och kunskapen fanns långt innan dess. Många av oss har jobbat
-              här i 13–20 år, sedan innan Rosenlunds tog över.
+              här i 13–20 år, sedan innan Rosenlunds Åkeri tog över.
             </p>
             <p>
               I dag är vi drygt 15 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och

@@ -76,7 +76,7 @@ export default function Home() {
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
               Vi är drygt 15 medarbetare med 12 portar, och många av oss har jobbat
-              i verkstaden i 13–20 år. Sedan 2019 är vi en del av Rosenlunds, tillsammans med {site.parent.name}.
+              i verkstaden i 13–20 år. Sedan 2019 är vi en del av Rosenlunds Åkeri.
             </p>
             <Link href="/om-oss" className="mt-7 inline-block font-semibold text-brand underline-offset-4 hover:underline">
               Läs mer om oss →

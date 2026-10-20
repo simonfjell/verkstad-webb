@@ -10,9 +10,9 @@ export default function Footer() {
         <div>
           <Image src="/brand/logo-white.png" alt={site.name} width={640} height={207} className="h-12 w-auto" />
           <p className="mt-5 text-sm leading-relaxed">
-            Verkstad för släp och trailers i Jönköping. Ett bolag i samma familj som{" "}
+            Verkstad för släp och trailers i Jönköping. En del av{" "}
             <a href={site.parent.url} className="font-semibold text-white underline-offset-4 hover:underline">
-              {site.parent.name}
+              Rosenlunds Åkeri
             </a>
             .
           </p>
@@ -86,7 +86,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {site.name}
           </span>
           <a href={site.parent.url} className="hover:text-white">
-            Rosenlundsgruppen · rosenlundsakeri.se
+            Rosenlunds Åkeri · rosenlundsakeri.se
           </a>
         </div>
       </div>
