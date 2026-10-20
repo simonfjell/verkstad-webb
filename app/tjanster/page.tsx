@@ -37,30 +37,21 @@ export default function Tjanster() {
               <li
                 key={s.slug}
                 id={s.slug}
-                className={`scroll-mt-28 rounded-xl border p-8 shadow-card ${s.wide ? "md:col-span-2" : ""} ${
-                  s.featured ? "border-brand bg-brand text-white" : "border-line bg-white"
-                }`}
+                className={`scroll-mt-28 rounded-xl border p-8 shadow-card ${s.wide ? "md:col-span-2" : ""} border-line bg-white`}
               >
                 <div className="flex items-start justify-between gap-4">
                   <span
-                    className={`flex size-12 items-center justify-center rounded-lg text-2xl ${
-                      s.featured ? "bg-white/15 text-white" : "bg-brand-light text-brand"
-                    }`}
+                    className={`flex size-12 items-center justify-center rounded-lg text-2xl bg-brand-light text-brand`}
                   >
                     <ServiceIcon name={s.icon} />
                   </span>
-                  {s.featured && (
-                    <span className="rounded bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-brand">
-                      Vår specialitet
-                    </span>
-                  )}
                 </div>
-                <h2 className={`mt-5 text-3xl font-bold ${s.featured ? "text-white" : "text-ink"}`}>{s.title}</h2>
-                <p className={`mt-3 text-lg leading-relaxed ${s.featured ? "text-white/85" : "text-muted"}`}>{s.short}</p>
+                <h2 className={`mt-5 text-3xl font-bold text-ink`}>{s.title}</h2>
+                <p className={`mt-3 text-lg leading-relaxed text-muted`}>{s.short}</p>
                 <ul className="mt-5 space-y-2">
                   {s.points.map((p) => (
                     <li key={p} className="flex gap-2.5">
-                      <TbCheck className={`mt-1 shrink-0 ${s.featured ? "text-accent-light" : "text-brand"}`} aria-hidden />
+                      <TbCheck className={`mt-1 shrink-0 text-brand`} aria-hidden />
                       {p}
                     </li>
                   ))}

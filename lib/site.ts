@@ -45,7 +45,6 @@ export type Service = {
   short: string;
   points: string[];
   icon: "floor" | "brake" | "service" | "lift" | "weld" | "tire" | "wash";
-  featured?: boolean;
   wide?: boolean;
 };
 
@@ -53,10 +52,9 @@ export const services: Service[] = [
   {
     slug: "walking-floor",
     title: "Walking floor",
-    short: "Vår specialitet. Felsökning, service och reparation av walking floor-trailers.",
+    short: "Felsökning, service och reparation av walking floor-trailers.",
     points: ["Hydraulik och drivenhet", "Golvlameller och tätningar", "Felsökning och service"],
     icon: "floor",
-    featured: true,
   },
   {
     slug: "bromsar",

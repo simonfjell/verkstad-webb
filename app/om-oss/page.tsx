@@ -28,7 +28,7 @@ export default function OmOss() {
               och liftservice, däckbyte, svets, lättare skåpreparationer och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p>
-              Vår specialitet är walking floor-trailers. Det är fordon som kräver kunskap om både hydraulik och golv, och
+              Vi jobbar mycket med walking floor-trailers. Det är fordon som kräver kunskap om både hydraulik och golv, och
               det är något vi jobbar med varje vecka.
             </p>
             <p>

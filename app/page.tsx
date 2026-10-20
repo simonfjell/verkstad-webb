@@ -34,7 +34,7 @@ export default function Home() {
             Verkstad för släp och trailers i Jönköping
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/85 sm:text-xl">
-            Service och reparation av släp, trailers, link och dolly. Specialister på walking floor.
+            Service och reparation av släp, trailers, link och dolly. Även walking floor.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -76,7 +76,7 @@ export default function Home() {
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Vår specialitet är walking floor-trailers. Vi är drygt 15 medarbetare med 12 portar, och många av oss har jobbat
+              Vi är drygt 15 medarbetare med 12 portar, och många av oss har jobbat
               i verkstaden i 13–20 år. Sedan 2019 är vi en del av Rosenlunds, tillsammans med {site.parent.name}.
             </p>
             <Link href="/om-oss" className="mt-7 inline-block font-semibold text-brand underline-offset-4 hover:underline">
@@ -133,11 +133,6 @@ export default function Home() {
                     <span className="flex size-12 items-center justify-center rounded-lg bg-brand-light text-2xl text-brand">
                       <ServiceIcon name={s.icon} />
                     </span>
-                    {s.featured && (
-                      <span className="rounded bg-brand px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-                        Specialitet
-                      </span>
-                    )}
                   </span>
                   <h3 className="mt-5 text-2xl font-bold text-ink">{s.title}</h3>
                   <p className="mt-2 leading-relaxed text-muted">{s.short}</p>
