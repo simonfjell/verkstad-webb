@@ -34,8 +34,8 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 aria-current={active ? "page" : undefined}
-                className={`border-b-2 py-1 text-[16px] font-medium transition-colors ${
-                  active ? "border-brand text-brand" : "border-transparent text-muted hover:text-brand"
+                className={`border-b-2 py-1 text-[15px] font-medium transition-colors ${
+                  active ? "border-accent text-brand" : "border-transparent text-muted hover:text-brand"
                 }`}
               >
                 {item.label}

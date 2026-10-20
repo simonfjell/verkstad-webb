@@ -1,18 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* Rosenlunds-blå, samma som rosenlundsakeri.se */
-  --color-brand: #0a3e7c;
-  --color-brand-dark: #072b57;
-  --color-brand-deep: #051f40;
-  --color-brand-light: #e8eef6;
-  --color-ink: #0f1b2b;
-  --color-muted: #536173;
-  --color-line: #dde3ea;
-  --color-surface: #f4f6f9;
+  /* Exakta värden från rosenlundsakeri.se (Bas.css) */
+  --color-brand: #0a3e7c;        /* --marin */
+  --color-brand-dark: #072d5a;   /* --marin-mork */
+  --color-brand-deep: #041d3b;   /* --marin-djup */
+  --color-accent: #337ab7;       /* --bla */
+  --color-accent-light: #6ba3d6; /* --bla-ljus */
+  --color-brand-light: #f2f6fb;  /* --yta-dampad */
+  --color-ink: #1b2430;          /* --text */
+  --color-muted: #5b6775;        /* --text-dampad */
+  --color-line: #e2e6eb;         /* --linje */
+  --color-surface: #f2f6fb;      /* --yta-dampad */
 
-  --font-sans: "Jost", system-ui, sans-serif;
-  --font-display: "Jost", system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", "Noto Sans", "Open Sans", Arial, sans-serif; /* --brod */
+  --font-display: "Jost", "Futura", "Century Gothic", system-ui, sans-serif; /* --rubrik */
+
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --container-6xl: 74rem;
 }
 
 html {
@@ -28,7 +35,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-display);
   letter-spacing: -0.01em;
   text-wrap: balance;
@@ -45,4 +53,11 @@ h3 {
 :focus-visible {
   outline: 3px solid #5b9cf0;
   outline-offset: 2px;
+}
+
+/* Knappar och meny använder rubriktypsnittet, som hos åkeriet */
+header nav a,
+a.rounded-md,
+button {
+  font-family: var(--font-display);
 }
