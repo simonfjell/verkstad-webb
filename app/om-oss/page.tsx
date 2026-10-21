@@ -31,7 +31,7 @@ export default function OmOss() {
               Vi jobbar mycket med walking floor-trailers. Det är fordon som kräver kunskap om både hydraulik och golv, och
               det är något vi jobbar med varje vecka.
             </p>
-            <p className="font-semibold text-ink">Vi vet vad det kostar när ett fordon står still. Därför är vi måna om att få in din enhet så snabbt som möjligt, helst samma dag.</p>
+            <p className="font-semibold text-ink">Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked.</p>
             <p>
               Besiktning och åtgärder på samma ställe: besiktningsstationen ligger i samma byggnad som verkstaden.
             </p>

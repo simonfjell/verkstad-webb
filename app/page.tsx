@@ -76,7 +76,7 @@ export default function Home() {
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Vi vet vad det kostar när ett fordon står still. Därför är vi måna om att få in din enhet så snabbt som möjligt, helst samma dag.
+              Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
               Vi är drygt 15 medarbetare med 12 portar, och många av oss har jobbat
