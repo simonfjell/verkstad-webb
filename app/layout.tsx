@@ -28,10 +28,41 @@ export const viewport: Viewport = {
   themeColor: "#0a3e7c",
 };
 
+const localBusiness = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  name: site.name,
+  url: site.url,
+  image: `${site.url}/images/verkstad-topp.webp`,
+  logo: `${site.url}/brand/rosenlunds-verkstad.png`,
+  telephone: site.phoneHref.replace("tel:", ""),
+  email: site.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.address.street,
+    postalCode: site.address.zip,
+    addressLocality: site.address.city,
+    addressCountry: "SE",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:00",
+      closes: "16:00",
+    },
+  ],
+  parentOrganization: { "@type": "Organization", name: site.parent.name, url: site.parent.url },
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="sv">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+        />
         <a
           href="#innehall"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-white focus:px-4 focus:py-2"

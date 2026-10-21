@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { services, site, vehicles } from "@/lib/site";
 
@@ -113,7 +114,11 @@ export default function BookingForm() {
         <p className="text-sm text-muted">
           {sent
             ? "Ditt mejlprogram öppnas med förfrågan ifylld. Tryck skicka där."
-            : "Förfrågan öppnas som ett färdigt mejl i ditt mejlprogram."}
+            : "Förfrågan öppnas som ett färdigt mejl i ditt mejlprogram."}{" "}
+          <Link href="/integritet" className="text-brand underline-offset-4 hover:underline">
+            Så hanterar vi dina uppgifter
+          </Link>
+          .
         </p>
       </div>
     </form>

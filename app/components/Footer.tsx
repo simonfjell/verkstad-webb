@@ -85,9 +85,14 @@ export default function Footer() {
           <span>
             © {new Date().getFullYear()} {site.name}
           </span>
-          <a href={site.parent.url} className="hover:text-white">
-            Rosenlunds Åkeri · rosenlundsakeri.se
-          </a>
+          <span className="flex flex-wrap gap-x-5 gap-y-1">
+            <Link href="/integritet" className="hover:text-white">
+              Integritetspolicy
+            </Link>
+            <a href={site.parent.url} className="hover:text-white">
+              Rosenlunds Åkeri · rosenlundsakeri.se
+            </a>
+          </span>
         </div>
       </div>
     </footer>

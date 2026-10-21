@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import PageTop from "../components/PageTop";
+import ClickMap from "../components/ClickMap";
 import Text from "../components/Text";
 
 export const metadata: Metadata = {
@@ -30,10 +31,6 @@ export default function Kontakt() {
                 <Text>{site.phone}</Text>
               </p>
             </a>
-            <a href={`mailto:${site.email}`} className="rounded-xl border border-line p-6 shadow-card hover:shadow-card-hover">
-              <h2 className="text-xl font-bold text-ink">Mejl</h2>
-              <p className="mt-1 break-all text-lg text-ink">{site.email}</p>
-            </a>
             <div className="rounded-xl border border-line p-6 shadow-card">
               <h2 className="text-xl font-bold text-ink">Besöksadress</h2>
               <p className="mt-1 text-lg text-ink">
@@ -42,9 +39,13 @@ export default function Kontakt() {
                 <Text>{site.address.zip}</Text> {site.address.city}
               </p>
             </div>
-            <div className="rounded-xl border border-line p-6 shadow-card">
+            <a href={`mailto:${site.email}`} className="rounded-xl border border-line p-6 shadow-card hover:shadow-card-hover sm:col-span-2">
+              <h2 className="text-xl font-bold text-ink">Mejl</h2>
+              <p className="mt-1 break-words text-lg text-ink">{site.email}</p>
+            </a>
+            <div className="rounded-xl border border-line p-6 shadow-card sm:col-span-2">
               <h2 className="text-xl font-bold text-ink">Öppettider</h2>
-              <ul className="mt-1 text-ink">
+              <ul className="mt-1 max-w-sm text-lg text-ink">
                 {site.hours.map((h) => (
                   <li key={h.days} className="flex justify-between gap-3">
                     <span>{h.days}</span>
@@ -62,14 +63,7 @@ export default function Kontakt() {
           </div>
 
           <div className="min-h-80 overflow-hidden rounded-xl border border-line bg-surface">
-            {/* Kartan visar platshållaradressen tills riktig adress är ifylld i lib/site.ts */}
-            <iframe
-              title={`Karta: ${addr}`}
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(addr)}&z=14&output=embed`}
-              className="h-full min-h-80 w-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <ClickMap address={addr} />
           </div>
         </div>
       </section>
