@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "sv_SE",
     siteName: site.name,
-    images: [{ url: "/images/verkstad.webp", width: 2576, height: 800 }],
+    images: [{ url: "/images/verkstad-topp.webp", width: 2576, height: 1290 }],
   },
 };
 

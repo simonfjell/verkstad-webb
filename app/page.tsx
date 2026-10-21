@@ -18,15 +18,15 @@ export default function Home() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-brand">
         <Image
-          src="/images/verkstad.webp"
+          src="/images/verkstad-topp.webp"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="-z-10 object-cover object-[62%_center] lg:object-[100%_center]"
+          className="-z-10 object-cover object-[62%_35%] lg:object-[50%_35%]"
         />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(105deg,rgba(7,45,90,0.92)_0%,rgba(7,45,90,0.78)_45%,rgba(10,62,124,0.45)_100%)]" />
-        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:py-40">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:py-28">
           <p className="text-sm font-semibold uppercase tracking-widest text-accent-light">
             {site.name} · {site.address.city}
           </p>
