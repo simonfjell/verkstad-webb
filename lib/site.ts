@@ -108,7 +108,7 @@ export type Contact = {
 };
 
 export const contacts: Contact[] = [
-  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", placeholder: true },
-  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", placeholder: true },
-  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", placeholder: true },
+  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-1.webp", placeholder: true },
+  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-2.webp", placeholder: true },
+  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-3.webp", placeholder: true },
 ];

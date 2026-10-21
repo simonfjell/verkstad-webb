@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import PageTop from "../components/PageTop";
@@ -70,6 +71,25 @@ export default function Kontakt() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="bg-surface">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <h2 className="text-3xl font-bold text-ink sm:text-4xl">Hitta hit</h2>
+          <p className="mt-2 text-lg text-muted">
+            Så ser verkstaden ut när du kommer till {site.address.street}.
+          </p>
+          <figure className="mt-8 overflow-hidden rounded-xl shadow-card">
+            <Image
+              src="/images/verkstad-hela.webp"
+              alt={`Rosenlunds Verkstad på ${site.address.street} i ${site.address.city}`}
+              width={2576}
+              height={620}
+              sizes="(min-width: 1184px) 1184px, 100vw"
+              className="h-auto w-full"
+            />
+          </figure>
         </div>
       </section>
     </>
