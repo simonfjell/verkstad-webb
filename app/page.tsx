@@ -76,6 +76,9 @@ export default function Home() {
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
+              Vi vet vad det kostar när ett fordon står still. Därför är vi måna om att få in din enhet så snabbt som möjligt, helst samma dag.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-muted">
               Vi är drygt 15 medarbetare med 12 portar, och många av oss har jobbat
               i verkstaden i 13–20 år. Sedan 2019 är vi en del av Rosenlunds Åkeri.
             </p>

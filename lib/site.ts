@@ -62,8 +62,8 @@ export const services: Service[] = [
   {
     slug: "service",
     title: "Service & besiktning",
-    short: "Löpande service och genomgång inför besiktning. Vi åtgärdar även anmärkningar.",
-    points: ["Löpande service", "Genomgång före besiktning", "Åtgärd av anmärkningar"],
+    short: "Besiktning och åtgärder på samma ställe. Besiktningsstationen ligger i samma byggnad som verkstaden.",
+    points: ["Löpande service", "Genomgång före besiktning", "Åtgärd av anmärkningar direkt på plats"],
   },
   {
     slug: "lift",
