@@ -79,7 +79,7 @@ export default function Home() {
               Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Vi är drygt 15 medarbetare, många med 20 års erfarenhet. Sedan 2019 är vi en del av Rosenlunds Åkeri.
+              Vi är drygt 15 medarbetare med 12 portar, och många av oss har 20 års erfarenhet. Sedan 2019 är vi en del av Rosenlunds Åkeri.
             </p>
             <Link href="/om-oss" className="mt-7 inline-block font-semibold text-brand underline-offset-4 hover:underline">
               Läs mer om oss →
