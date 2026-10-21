@@ -30,14 +30,14 @@ export default function Kontaktpersoner() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {contacts.map((c, i) => {
               const ph = c.placeholder ? "ph" : "";
               return (
                 <li key={`${c.name}-${i}`} className="overflow-hidden rounded-xl border border-line bg-white shadow-card">
                   <div className="relative aspect-[4/5] bg-surface">
                     {c.photo ? (
-                      <Image src={c.photo} alt={c.placeholder ? "Porträtt" : c.name} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+                      <Image src={c.photo} alt={c.placeholder ? "Porträtt" : c.name} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
                     ) : (
                       <div className="flex h-full items-center justify-center">
                         <span className="font-display text-5xl font-semibold text-line-strong">{initials(c.name)}</span>
