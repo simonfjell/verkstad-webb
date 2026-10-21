@@ -42,7 +42,7 @@ export default function OmOss() {
               </a>
               . Vi tar emot fordon från alla åkerier och uthyrningsbolag.
             </p>
-            <h2 className="pt-4 text-3xl font-bold text-ink sm:text-4xl">Ny i namnet, inte i verkstaden</h2>
+            <h2 className="pt-4 text-3xl font-bold text-ink sm:text-4xl">Ny i namnet, inte i branschen</h2>
             <p>
               Rosenlunds Verkstad öppnade 2019, men verkstaden och kunskapen fanns långt innan dess. Många av oss har jobbat
               här i 20 år, sedan innan Rosenlunds Åkeri tog över.
