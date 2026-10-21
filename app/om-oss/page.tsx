@@ -33,6 +33,10 @@ export default function OmOss() {
             </p>
             <p className="font-semibold text-ink">Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked.</p>
             <p>
+              Vi har ett eget reservdelslager på 250 m², så att vi snabbt kan utföra jobbet. Vi säljer också delar över
+              disk.
+            </p>
+            <p>
               Besiktning och åtgärder på samma ställe: besiktningsstationen ligger i samma byggnad som verkstaden.
             </p>
             <p>

@@ -76,7 +76,7 @@ export default function Home() {
               Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked.
+              Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked. Med ett eget reservdelslager på 250 m² kan vi snabbt utföra jobbet.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
               Vi är drygt 15 medarbetare med 12 portar och 20 års erfarenhet. Sedan 2019 är vi en del av Rosenlunds Åkeri.
@@ -132,18 +132,23 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <Link
-            href="/tjanster#tvatthall"
-            className="group mt-5 flex flex-col gap-5 rounded-xl bg-brand p-7 text-white shadow-card transition-shadow hover:shadow-card-hover sm:flex-row sm:items-center sm:p-8"
-          >
-            <span className="flex-1">
-              <span className="block font-display text-2xl font-bold">Tvätthall för tung trafik</span>
-              <span className="mt-1 block text-white/80">Vi har egen tvätthall för lastbilar, släp och trailers.</span>
-            </span>
-            <span className="font-semibold">
-              Läs mer <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
-            </span>
-          </Link>
+          <div className="mt-5 grid gap-5 md:grid-cols-2">
+            {services
+              .filter((s) => s.wide)
+              .map((s) => (
+                <Link
+                  key={s.slug}
+                  href={`/tjanster#${s.slug}`}
+                  className="group flex flex-col gap-4 rounded-xl bg-brand p-7 text-white shadow-card transition-shadow hover:shadow-card-hover sm:p-8"
+                >
+                  <span className="block font-display text-2xl font-bold">{s.title}</span>
+                  <span className="block text-white/80">{s.short}</span>
+                  <span className="mt-auto font-semibold">
+                    Läs mer <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+                  </span>
+                </Link>
+              ))}
+          </div>
         </div>
       </section>
 

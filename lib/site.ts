@@ -84,6 +84,13 @@ export const services: Service[] = [
     points: ["Däckbyte", "Hjularbeten", "Kontroll av slitage"],
   },
   {
+    slug: "reservdelar",
+    title: "Reservdelar",
+    short: "Eget reservdelslager på 250 m², så att vi snabbt kan utföra jobbet. Vi säljer också delar över disk.",
+    points: ["Reservdelslager på 250 m²", "Försäljning över disk"],
+    wide: true,
+  },
+  {
     slug: "tvatthall",
     title: "Tvätthall för tung trafik",
     short: "Egen tvätthall för lastbilar, släp och trailers.",

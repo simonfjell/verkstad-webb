@@ -17,7 +17,7 @@ export default function Header() {
       <div className="mx-auto flex h-20 max-w-6xl items-center gap-6 px-4 sm:px-6">
         <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
           <Image
-            src="/brand/logo.png"
+            src="/brand/rosenlunds-verkstad.png"
             alt={site.name}
             width={640}
             height={207}

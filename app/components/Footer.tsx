@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-brand-deep text-white/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Image src="/brand/logo-white.png" alt={site.name} width={640} height={207} className="h-12 w-auto" />
+          <Image src="/brand/rosenlunds-verkstad-vit.png" alt={site.name} width={640} height={207} className="h-12 w-auto" />
           <p className="mt-5 text-sm leading-relaxed">
             Verkstad för släp och trailers i Jönköping. En del av{" "}
             <a href={site.parent.url} className="font-semibold text-white underline-offset-4 hover:underline">
