@@ -2,7 +2,7 @@
 // Värden med "TODO" är platshållare som ska bytas mot riktiga uppgifter innan lansering.
 
 export const site = {
-  name: "Rosenlunds Verkstads AB",
+  name: "Rosenlunds Verkstad AB",
   shortName: "Rosenlunds Verkstad",
   url: "https://verkstad-webb.vercel.app", // TODO: byt till riktig domän
 
