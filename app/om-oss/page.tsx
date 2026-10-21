@@ -45,7 +45,7 @@ export default function OmOss() {
             <h2 className="pt-4 text-3xl font-bold text-ink sm:text-4xl">Ny i namnet, inte i verkstaden</h2>
             <p>
               Rosenlunds Verkstad öppnade 2019, men verkstaden och kunskapen fanns långt innan dess. Många av oss har jobbat
-              här i 13–20 år, sedan innan Rosenlunds Åkeri tog över.
+              här i 20 år, sedan innan Rosenlunds Åkeri tog över.
             </p>
             <p>
               I dag är vi drygt 15 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och
@@ -59,7 +59,7 @@ export default function OmOss() {
               {[
                 ["12", "Portar"],
                 ["Drygt 15", "Medarbetare"],
-                ["13–20 år", "Erfarenhet"],
+                ["20 år", "Erfarenhet"],
                 ["2019", "Rosenlunds Verkstad"],
               ].map(([big, small]) => (
                 <div key={small} className="bg-brand p-6">
