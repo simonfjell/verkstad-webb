@@ -83,7 +83,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-xs text-white/60 sm:flex-row sm:justify-between sm:px-6">
           <span>
-            © {new Date().getFullYear()} {site.name} · Org.nr {site.company.orgNr}
+            © {new Date().getFullYear()} {site.company.legalName} · Org.nr {site.company.orgNr}
           </span>
           <span className="flex flex-wrap gap-x-5 gap-y-1">
             <Link href="/kontakt#foretagsuppgifter" className="hover:text-white">

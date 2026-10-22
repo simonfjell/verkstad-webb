@@ -15,6 +15,7 @@ export const site = {
     city: "Jönköping",
   },
   company: {
+    legalName: "Rosenlunds Verkstads AB", // registrerat namn – används i företagsuppgifter
     orgNr: "556832-1920",
     vatNr: "SE556832192001",
     iban: "SE10 1200 0000 0129 1012 4088",

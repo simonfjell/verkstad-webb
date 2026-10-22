@@ -37,6 +37,7 @@ const localBusiness = {
   logo: `${site.url}/brand/rosenlunds-verkstad.png`,
   telephone: site.phoneHref.replace("tel:", ""),
   email: site.email,
+  legalName: site.company.legalName,
   vatID: site.company.vatNr,
   address: {
     "@type": "PostalAddress",

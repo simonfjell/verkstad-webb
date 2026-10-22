@@ -73,7 +73,7 @@ export default function Kontakt() {
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Besöksadress</h2>
             <p className="mt-3 text-lg text-ink">
-              {site.name}
+              {site.company.legalName}
               <br />
               {site.address.street}
               <br />
@@ -83,7 +83,7 @@ export default function Kontakt() {
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Fakturaadress</h2>
             <p className="mt-3 text-lg text-ink">
-              {site.name}
+              {site.company.legalName}
               <br />
               {site.company.invoiceAddress.line}
               <br />
