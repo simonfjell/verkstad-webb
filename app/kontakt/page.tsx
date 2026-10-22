@@ -80,30 +80,28 @@ export default function Kontakt() {
               {site.address.zip} {site.address.city}
             </p>
           </div>
-          <div>
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Fakturaadress</h2>
-            <p className="mt-3 text-lg text-ink">
-              {site.company.legalName}
-              <br />
-              {site.company.invoiceAddress.line}
-              <br />
-              {site.company.invoiceAddress.zip} {site.company.invoiceAddress.city}
-            </p>
-          </div>
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Företagsuppgifter</h2>
-            <dl className="mt-3 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+            <dl className="mt-3 grid max-w-3xl gap-x-8 gap-y-3 sm:grid-cols-2">
               {[
                 ["Organisationsnummer", site.company.orgNr],
                 ["VAT-nummer", site.company.vatNr],
                 ["IBAN", site.company.iban],
                 ["Swift/BIC", site.company.bic],
               ].map(([k, v]) => (
-                <div key={k} className={k === "IBAN" ? "sm:col-span-2" : undefined}>
+                <div key={k} className={k === "IBAN" ? "sm:col-span-2 lg:col-span-1" : undefined}>
                   <dt className="text-sm text-muted">{k}</dt>
                   <dd className="whitespace-nowrap text-lg font-semibold text-ink">{v}</dd>
                 </div>
               ))}
+              <div className="sm:col-span-2">
+                <dt className="text-sm text-muted">Fakturor tas emot via e-post</dt>
+                <dd className="break-words text-lg font-semibold">
+                  <a href={`mailto:${site.company.invoiceEmail}`} className="text-brand hover:underline">
+                    {site.company.invoiceEmail}
+                  </a>
+                </dd>
+              </div>
             </dl>
           </div>
         </div>

@@ -20,7 +20,7 @@ export const site = {
     vatNr: "SE556832192001",
     iban: "SE10 1200 0000 0129 1012 4088",
     bic: "DABASESX",
-    invoiceAddress: { line: "Box 3020", zip: "550 03", city: "Jönköping" },
+    invoiceEmail: "rosenlundsverkstadsab@centsoft.se", // e-faktura
   },
   hours: [
     { days: "Måndag–fredag", time: "07:00–16:00" },
