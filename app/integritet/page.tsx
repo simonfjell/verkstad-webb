@@ -19,7 +19,7 @@ export default function Integritet() {
           <div>
             <h2 className="text-2xl font-bold text-ink">Personuppgiftsansvarig</h2>
             <p className="mt-2">
-              {site.name}, {addr}. Frågor om personuppgifter skickar du till{" "}
+              {site.name} (org.nr {site.company.orgNr}), {addr}. Frågor om personuppgifter skickar du till{" "}
               <a href={`mailto:${site.email}`} className="font-semibold text-brand hover:underline">
                 {site.email}
               </a>

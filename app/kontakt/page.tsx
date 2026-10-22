@@ -68,6 +68,47 @@ export default function Kontakt() {
         </div>
       </section>
 
+      <section id="foretagsuppgifter" className="scroll-mt-24 border-t border-line bg-white">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Besöksadress</h2>
+            <p className="mt-3 text-lg text-ink">
+              {site.name}
+              <br />
+              {site.address.street}
+              <br />
+              {site.address.zip} {site.address.city}
+            </p>
+          </div>
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Fakturaadress</h2>
+            <p className="mt-3 text-lg text-ink">
+              {site.name}
+              <br />
+              {site.company.invoiceAddress.line}
+              <br />
+              {site.company.invoiceAddress.zip} {site.company.invoiceAddress.city}
+            </p>
+          </div>
+          <div className="lg:col-span-2">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">Företagsuppgifter</h2>
+            <dl className="mt-3 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+              {[
+                ["Organisationsnummer", site.company.orgNr],
+                ["VAT-nummer", site.company.vatNr],
+                ["IBAN", site.company.iban],
+                ["Swift/BIC", site.company.bic],
+              ].map(([k, v]) => (
+                <div key={k} className={k === "IBAN" ? "sm:col-span-2" : undefined}>
+                  <dt className="text-sm text-muted">{k}</dt>
+                  <dd className="whitespace-nowrap text-lg font-semibold text-ink">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-surface">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <h2 className="text-3xl font-bold text-ink sm:text-4xl">Hitta hit</h2>
