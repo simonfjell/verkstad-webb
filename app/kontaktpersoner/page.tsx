@@ -37,7 +37,7 @@ export default function Kontaktpersoner() {
                 <li key={`${c.name}-${i}`} className="overflow-hidden rounded-xl border border-line bg-white shadow-card">
                   <div className="relative aspect-[4/5] bg-surface">
                     {c.photo ? (
-                      <Image src={c.photo} alt={c.placeholder ? "Porträtt" : c.name} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+                      <Image src={c.photo} alt={c.name} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
                     ) : (
                       <div className="flex h-full items-center justify-center">
                         <span className="font-display text-5xl font-semibold text-line-strong">{initials(c.name)}</span>
@@ -48,9 +48,11 @@ export default function Kontaktpersoner() {
                     <h2 className="text-2xl font-bold text-ink">
                       <span className={ph}>{c.name}</span>
                     </h2>
-                    <p className="mt-1 text-muted">
-                      <span className={ph}>{c.role}</span>
-                    </p>
+                    {c.role && (
+                      <p className="mt-1 text-muted">
+                        <span className={ph}>{c.role}</span>
+                      </p>
+                    )}
                     <div className="mt-4 space-y-1 border-t border-line pt-4">
                       {c.phone && (
                         <a href={c.phoneHref ?? "#"} className="block font-semibold text-brand hover:underline">
@@ -58,8 +60,11 @@ export default function Kontaktpersoner() {
                         </a>
                       )}
                       {c.email && (
-                        <a href={`mailto:${c.email}`} className="block break-all text-brand hover:underline">
-                          <span className={ph}>{c.email}</span>
+                        <a href={`mailto:${c.email}`} className="block text-[15px] text-brand [overflow-wrap:normal] hover:underline">
+                          <span className={ph}>
+                            {c.email.split("@")[0]}@<wbr />
+                            {c.email.split("@")[1]}
+                          </span>
                         </a>
                       )}
                     </div>

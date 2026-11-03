@@ -110,11 +110,10 @@ export const services: Service[] = [
 // Märken vi jobbar med (namn som text, inga loggor – se diskussion om varumärken)
 export const brands = ["Kraker", "Knapen", "Stas", "Krone", "Schmitz Cargobull", "Denison", "VAK", "JOST", "SAF"];
 
-// Kontaktpersoner. TODO: fyll i riktiga namn, titlar och nummer (kolla med varje person först).
-// Sätt placeholder: false när uppgifterna är bekräftade. photo: sökväg i /public, t.ex. "/team/anna.webp".
+// Kontaktpersoner. Lämna role tom ("") för att dölja titelraden. photo: sökväg i /public.
 export type Contact = {
   name: string;
-  role: string;
+  role?: string;
   phone?: string;
   phoneHref?: string;
   email?: string;
@@ -123,8 +122,8 @@ export type Contact = {
 };
 
 export const contacts: Contact[] = [
-  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-1.webp", placeholder: true },
-  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-2.webp", placeholder: true },
-  { name: "Namn Efternamn", role: "Titel", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-3.webp", placeholder: true },
-  { name: "Namn Efternamn", role: "Lager", phone: "07X-XXX XX XX", email: "namn@rosenlundsakeri.se", photo: "/team/person-lager.webp", placeholder: true },
+  { name: "Ulf Jonsson", phone: "076-000 80 60", phoneHref: "tel:+46760008060", email: "ulf.jonsson@rosenlundsakeri.se", photo: "/team/person-1.webp" },
+  { name: "Johan Svehagen", phone: "076-000 80 61", phoneHref: "tel:+46760008061", email: "johan.svehagen@rosenlundsakeri.se", photo: "/team/person-2.webp" },
+  { name: "Simon Fjell", phone: "076-000 80 64", phoneHref: "tel:+46760008064", email: "simon.fjell@rosenlundsakeri.se", photo: "/team/person-3.webp" },
+  { name: "Anders Engqvist", role: "Lager", phone: "076-000 80 65", phoneHref: "tel:+46760008065", email: "lager@rosenlundsakeri.se", photo: "/team/person-lager.webp" },
 ];
