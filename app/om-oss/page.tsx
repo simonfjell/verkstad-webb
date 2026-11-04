@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { TbCheck } from "react-icons/tb";
 import { site, vehicles } from "@/lib/site";
 import ContactBand from "../components/ContactBand";
@@ -85,6 +86,22 @@ export default function OmOss() {
               </ul>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section className="bg-surface">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <h2 className="text-3xl font-bold text-ink sm:text-4xl">Vi på Rosenlunds Verkstad</h2>
+          <figure className="mt-8 overflow-hidden rounded-xl shadow-card">
+            <Image
+              src="/images/teamet.webp"
+              alt="Medarbetarna på Rosenlunds Verkstad framför verkstaden på Lampvägen"
+              width={1769}
+              height={907}
+              sizes="(min-width: 1184px) 1184px, 100vw"
+              className="h-auto w-full"
+            />
+          </figure>
         </div>
       </section>
 
