@@ -4,7 +4,7 @@
 export const site = {
   name: "Rosenlunds Verkstad AB",
   shortName: "Rosenlunds Verkstad",
-  url: "https://rosenlundsverkstad.se",
+  url: "https://www.rosenlundsverkstad.se",
 
   phone: "076-000 80 68",
   phoneHref: "tel:+46760008068",
