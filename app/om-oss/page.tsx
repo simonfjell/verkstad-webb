@@ -94,7 +94,8 @@ export default function OmOss() {
           <h2 className="text-3xl font-bold text-ink sm:text-4xl">Vi på Rosenlunds Verkstad</h2>
           <figure className="mt-8 overflow-hidden rounded-xl shadow-card">
             <Image
-              src="/images/teamet.webp"
+              src="/images/teamet-hq.jpg"
+              unoptimized
               alt="Medarbetarna på Rosenlunds Verkstad framför verkstaden på Lampvägen"
               width={1769}
               height={907}
