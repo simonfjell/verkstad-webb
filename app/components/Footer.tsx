@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <Image src="/brand/rosenlunds-verkstad-vit.png" alt={site.name} width={640} height={207} className="h-12 w-auto" />
           <p className="mt-5 text-sm leading-relaxed">
-            Verkstad för släp och trailers i Jönköping. En del av{" "}
+            Verkstad för tunga efterfordon i Jönköping. En del av{" "}
             <a href={site.parent.url} className="font-semibold text-white underline-offset-4 hover:underline">
               Rosenlunds Åkeri
             </a>

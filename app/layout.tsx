@@ -11,11 +11,11 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} – service och reparation av släp och trailers i Jönköping`,
+    default: `${site.name} – verkstad för tunga efterfordon, släp och trailers i Jönköping`,
     template: `%s | ${site.shortName}`,
   },
   description:
-    "Verkstad för släp, trailers, link och dolly i Jönköping. Walking floor, bromsar och EBS, service, lift, svets, försäkringsjobb, däckbyte, reservdelar och tvätthall för tung trafik.",
+    "Verkstad för tunga efterfordon i Jönköping: släp, trailers, link och dolly. Specialister på walking floor. Även bromsar och EBS, service, lift, svets, försäkringsjobb, däckbyte, reservdelar och miljövänlig tvätthall för tung trafik.",
   openGraph: {
     type: "website",
     locale: "sv_SE",

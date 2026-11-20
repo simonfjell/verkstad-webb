@@ -26,10 +26,10 @@ export default function OmOss() {
             <h2 className="text-3xl font-bold text-ink sm:text-4xl">Komplett verkstad för släp och trailers</h2>
             <p>
               Rosenlunds Verkstad tar hand om släp, trailers, link och dolly. Vi jobbar med service, bromsar och EBS, lift
-              och liftservice, däckbyte, svets, kapell, lättare skåpreparationer och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
+              och liftservice, däckbyte, svets, kapell, skåpreparationer och försäkringsjobb. Vi har också en egen miljövänlig tvätthall för tung trafik.
             </p>
             <p>
-              Vi jobbar mycket med walking floor-trailers. Det är fordon som kräver kunskap om både hydraulik och golv, och
+              Vi är specialister på walking floor-trailers. Det är fordon som kräver kunskap om både hydraulik och golv, och
               det är något vi jobbar med varje vecka.
             </p>
             <p className="font-semibold text-ink">Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked.</p>
@@ -53,7 +53,7 @@ export default function OmOss() {
               här i 20 år, sedan innan Rosenlunds Åkeri tog över.
             </p>
             <p>
-              I dag är vi drygt 15 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och
+              I dag är vi 14 medarbetare och har 12 portar. Det betyder att vi kan ta in flera fordon samtidigt och
               hålla nere stilleståndet.
             </p>
             {/* TODO: bilder från verkstaden */}
@@ -63,7 +63,7 @@ export default function OmOss() {
             <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/20 text-white">
               {[
                 ["12", "Portar"],
-                ["Drygt 15", "Medarbetare"],
+                ["14", "Medarbetare"],
                 ["20 år", "Erfarenhet"],
                 ["2019", "Rosenlunds Verkstad"],
               ].map(([big, small]) => (

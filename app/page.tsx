@@ -7,7 +7,7 @@ import ContactBand from "./components/ContactBand";
 
 const facts = [
   { big: "12", small: "Portar i verkstaden" },
-  { big: "Drygt 15", small: "Medarbetare" },
+  { big: "14", small: "Medarbetare" },
   { big: "20 år", small: "Erfarenhet i verkstaden" },
   { big: "2019", small: "Rosenlunds Verkstad startade" },
 ];
@@ -31,10 +31,10 @@ export default function Home() {
             {site.name} · {site.address.city}
           </p>
           <h1 className="mt-4 max-w-2xl text-5xl font-bold leading-[1.08] text-white sm:text-6xl lg:text-[4.25rem]">
-            Verkstad för släp och trailers i Jönköping
+            Verkstad för tunga efterfordon i Jönköping
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/85 sm:text-xl">
-            Service och reparation av släp, trailers, link och dolly. Även walking floor.
+            Service och reparation av släp, trailers, link och dolly. Specialister på walking floor.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -73,13 +73,13 @@ export default function Home() {
             <h2 className="mt-2 text-4xl font-bold text-ink sm:text-5xl">Komplett verkstad för släp och trailers</h2>
             <p className="mt-5 text-lg leading-relaxed text-muted">
               Rosenlunds Verkstad servar och reparerar släp, trailers, link och dolly.
-              Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också egen tvätthall för tung trafik.
+              Allt från bromsar och lift till däckbyte, svets och försäkringsjobb. Vi har också en egen miljövänlig tvätthall för tung trafik.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
               Vi vet vad det kostar när ett ekipage står still, så vi lägger stor vikt vid snabb felsökning och tydliga besked. Med ett eget reservdelslager på 250 m² kan vi snabbt utföra jobbet.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Vi är drygt 15 medarbetare med 12 portar och 20 års erfarenhet. Sedan 2019 är vi en del av Rosenlunds Åkeri.
+              Vi är 14 medarbetare med 12 portar och 20 års erfarenhet. Sedan 2019 är vi en del av Rosenlunds Åkeri.
             </p>
             <Link href="/om-oss" className="mt-7 inline-block font-semibold text-brand underline-offset-4 hover:underline">
               Läs mer om oss →

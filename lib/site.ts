@@ -58,7 +58,7 @@ export const services: Service[] = [
   {
     slug: "walking-floor",
     title: "Walking floor",
-    short: "Felsökning, service och reparation av walking floor-trailers.",
+    short: "Vi är specialister på walking floor. Felsökning, service och reparation av walking floor-trailers.",
     points: ["Hydraulik och drivenhet", "Golvlameller och tätningar", "Felsökning och service"],
   },
   {
@@ -82,8 +82,8 @@ export const services: Service[] = [
   {
     slug: "skador",
     title: "Skador & påbyggnad",
-    short: "Försäkringsjobb och reparationer av påbyggnader, från lättare skåpreparationer till kapell och svets.",
-    points: ["Försäkringsjobb", "Lättare skåpreparationer med lim och spackel", "Kapell och presenning", "Svets"],
+    short: "Försäkringsjobb och reparationer av påbyggnader, från skåp till kapell och svets.",
+    points: ["Försäkringsjobb", "Skåpreparationer", "Kapell och presenning", "Svets"],
   },
   {
     slug: "dack",
@@ -101,8 +101,8 @@ export const services: Service[] = [
   {
     slug: "tvatthall",
     title: "Tvätthall för tung trafik",
-    short: "Egen tvätthall för lastbilar, släp och trailers.",
-    points: ["Lastbilar", "Släp och trailers"],
+    short: "Miljövänlig tvätthall som uppfyller alla lagar och miljökrav. Vi har även en hall för invändig tvätt.",
+    points: ["Lastbilar, släp och trailers", "Uppfyller alla lagar och miljökrav", "Hall för invändig tvätt"],
     wide: true,
   },
 ];
